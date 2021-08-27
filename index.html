@@ -25,7 +25,7 @@
   </head>
   <body id="home">
     <!-- navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow" style="background-color: #008b8b">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow" style="background-color: #304d63">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,8 +58,8 @@
         </a>
 
       <h1 class="display-4">Rizky Yanuar K</h1>
-      <p class="lead">Student | Analyst</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <p class="lead"></p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
         <path
           fill="#ffffff"
           fill-opacity="1"
@@ -77,7 +77,7 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4" data-aos="fade-right" data-aos-offset="230" data-aos-duration="1500">
+          <div class="col-md-4" data-aos="fade-right" data-aos-offset="230" data-aos-duration="1300">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia provident, accusamus impedit nostrum sapiente officiis dolor placeat molestias maxime voluptas!</p>
           </div>
           <div class="col-md-4" data-aos="fade-left" data-aos-offset="230" data-aos-duration="1500" data-aos-delay="200">
@@ -87,7 +87,7 @@
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#8FBC8F"
+          fill="#8FB9aa"
           fill-opacity="1"
           d="M0,96L48,106.7C96,117,192,139,288,128C384,117,480,75,576,64C672,53,768,75,864,112C960,149,1056,203,1152,197.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
@@ -229,7 +229,7 @@
        </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#008B8B"
+          fill="#304d63"
           fill-opacity="1"
           d="M0,160L34.3,138.7C68.6,117,137,75,206,85.3C274.3,96,343,160,411,197.3C480,235,549,245,617,224C685.7,203,754,149,823,149.3C891.4,149,960,203,1029,202.7C1097.1,203,1166,149,1234,117.3C1302.9,85,1371,75,1406,69.3L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
         ></path>
@@ -238,7 +238,7 @@
     <!-- akhir contact -->
 
     <!-- footer -->
-    <footer style="background-color: #008b8b" class="pb-5">
+    <footer style="background-color: #304d63" class="pb-5">
       <p class="text-white text-center">Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://linktr.ee/rizkyyanuark" class="text-white fw-bold">Rizky Yanuar K</a></p>
     </footer>
 
@@ -283,6 +283,14 @@
           once: true,
         });
       </script>
-    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+<script>
+  gsap.registerPlugin(TextPlugin);
+  gsap.to('.lead', {duration: 3.5, ease: 'power.out', delay: 1.5, text: 'Student | Analyst'});
+ 
+  gsap.from('.navbar',{duration: 1.5, y: '-100', opacity:0, ease: 'bounce'})
+</script>
   </body>
 </html>

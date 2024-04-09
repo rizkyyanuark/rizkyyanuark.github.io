@@ -32,7 +32,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto lato-bold">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
@@ -51,13 +51,18 @@
     </nav>
     <!-- akhir navbar -->
     <!-- jumbotron -->
+    <style>
+      .jumbotron {
+          font-family: Arial, sans-serif; /* Ganti 'Arial' dengan nama font yang Anda inginkan */
+      }
+    </style>
     <section class="jumbotron text-center">
      
-      <a href="img/foto almet.jpg" data-lightbox="...">
+      <a href="img/foto almet 2.jpg" data-lightbox="...">
         <img src="img/foto almet 2.jpg" width="200" class="rounded-circle img-thumbnail" class="img-thumbnail" alt="Rizky Yanuar K" >
         </a>
 
-      <h1 class="display-4">Rizky Yanuar Kristianto</h1>
+      <h1 class="display-4">Rizky Yanuar K</h1>
       <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
         <path
@@ -197,7 +202,7 @@
                 <input type="email" class="form-control" id="email" aria-describedby="Email" name="email" />
               </div>
               <div class="mb-3">
-                <label for="pesan" class="form-label">pesan</label>
+                <label for="pesan" class="form-label">Pesan</label>
                 <textarea class="form-control" id="pesan" rows="3" name="message"></textarea>
               </div>
               <button type="submit" class="btn btn-success btn-kirim">Kirim</button>
@@ -226,8 +231,8 @@
     <!-- akhir contact -->
 
     <!-- footer -->
-    <footer style="background-color:#2C3E50" class="pb-5">
-      <p class="text-white text-center">Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://linktr.ee/rizkyyanuark" class="text-white fw-bold">Rizky Yanuar K</a></p>
+    <footer style="background-color:#2C3E50" class="pb-5 lato-black">
+      <p class="text-white text-center">Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://linktr.ee/rizkyyanuark" class="text-white fw-bold">RizkyYanuarK</a></p>
     </footer>
 
     <!-- akhir footer -->
@@ -235,7 +240,7 @@
     <script src="dist/js/lightbox-plus-jquery.min.js"></script>
     <script>
 
-      const scriptURL = "https://script.google.com/macros/s/AKfycbwPPCMdSYaj13Rq3Qb3AiE-34uUA2d3reshNnP4n450dtWmcNoHkrZ2wgZDNq0eHYMZYg/exec";
+      const scriptURL = "https://script.google.com/macros/s/AKfycby22u2013ZGFMyWupy-talY013_vwmQBEOit5QG4w9oPma03ICdwL2mC9xBnTb9ug8H/exec";
       const form = document.forms["submit-to-google-sheet"];
       const btnKirim = document.querySelector(".btn-kirim");
       const btnLoading = document.querySelector(".btn-loading");
@@ -276,9 +281,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
 <script>
   gsap.registerPlugin(TextPlugin);
-  gsap.to('.lead', {duration: 5.5, ease: 'power.out', delay: 1.5, text: 'Jobseeker | Data Science'});
- 
+  gsap.to('.lead', {duration: 5.5, ease: 'power.out', delay: 1.5, text: 'Student | Data Science'});
+  gsap.from('.jumbotron img', {duration: 1.5, y: '-100', opacity:0, ease: 'bounce'});
   gsap.from('.navbar',{duration: 1.5, y: '-100', opacity:0, ease: 'bounce'})
+  gsap.from('.display-4',{duration: 1, x: '-50', opacity:0,delay:0.6 ,ease: 'back'})
 </script>
   </body>
 </html>
